@@ -8,7 +8,13 @@
 
 <ion-content [fullscreen]="true">
   <div class="container-coin">
-  <h1>Valendo: 1</h1>
+
+  <ion-grid>
+  <ion-row>
+  <ion-col>Valendo: </ion-col>
+  <ion-col>1</ion-col>
+</ion-row>
+</ion-grid>
 
   <div>
     <ion-button>1</ion-button>
@@ -21,35 +27,61 @@
 </div>
 
 <div class="container-coin2">
-  <div class="coluna1">
-    <h1>Time1</h1>
-    <ion-button>+</ion-button>
-    <h2>0</h2>
-    <ion-button>-</ion-button>
+
+  <div class="coluna">
+    <ion-card>
+      <ion-card-header>
+        <ion-title>Time 1</ion-title>
+
+        <ion-button>+</ion-button>
+        <h1>0</h1>
+        <ion-button>-</ion-button>
+
+      </ion-card-header>
+
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-title>Time 2</ion-title>
+
+        <ion-button>+</ion-button>
+        <h1>0</h1>
+        <ion-button>-</ion-button>
+
+      </ion-card-header>
+
+    </ion-card>
   </div>
-
-
-  <div class="coluna2">
-  <h1>Time2</h1>
-  <ion-button>+</ion-button>
-    <h2>0</h2>
-    <ion-button>-</ion-button>
-  </div>
-
 </div>
 
 <div class="container-coin3">
-  <h1>Valendo: 1</h1>
+  <h1>Partidas</h1>
 
-  <div>
-    <ion-button>1</ion-button>
-    <ion-button>3</ion-button>
-    <ion-button>6</ion-button>
-    <ion-button>9</ion-button>
-    <ion-button>12</ion-button>
-  </div>
+  <div class="contagem">
+
+    <div class="time">
+  <ion-item>
+    <h1>Time 1</h1>
+  </ion-item>
+    <ion-item>
+    <h1>Time 2</h1>
+  </ion-item>
+</div>
+
+<div class="num">
+  <ion-item>
+    <h1>0</h1>
+  </ion-item>
+    <ion-item>
+    <h1>0</h1>
+  </ion-item>
+</div>
 
 </div>
 
+</div>
+
+<ion-button expand="block">Limpar</ion-button>
 
 </ion-content>

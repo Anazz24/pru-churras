@@ -1,7 +1,7 @@
 .container-coin{
   display: flex;
   align-items: center;
-  height: 30%;
+  height: 32%;
   width: 100%;
   flex-flow: column;
 }
@@ -9,33 +9,37 @@
 .container-coin2{
   display: flex;
   align-items: center;
-  height: 50%;
+  height: 32%;
   width: 100%;
   flex-flow: column;
 
-  .coluna1{
+  .coluna{
     display: flex;
     align-items: center;
     height: 50%;
-    width: 50%;
+    width: 80%;
     float: left;
   }
 
-  .coluna2{
-    display: flex;
-    align-items: center;
-    height: 50%;
-    width: 50%;
-    float: right;
-  }
 }
 
 .container-coin3{
   display: flex;
   align-items: center;
-  height: 50%;
+  height: 30%;
   width: 100%;
   flex-flow: column;
+
+  .contagem{
+    display: flex;
+    align-items: center;
+    height: 50%;
+    width: 90%;
+    float: left;
+
+
+  }
+
 }
 
 
