@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
+  carta=1;
+  time1=0;
+  time2=0;
+  partida1=0
+  partida2=0
+
   constructor() {}
 
 }
