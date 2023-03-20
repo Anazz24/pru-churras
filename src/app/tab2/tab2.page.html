@@ -20,11 +20,11 @@
 
     <div class="button">
   <ion-grid>
-    <ion-button color="dark" style="width: 60px;">1</ion-button>
-    <ion-button color="dark" style="width: 60px;">3</ion-button>
-    <ion-button color="dark" style="width: 60px;">6</ion-button>
-    <ion-button color="dark" style="width: 60px;">9</ion-button>
-    <ion-button color="dark" style="width: 60px;">12</ion-button>
+    <ion-button color="dark" style="width: 60px;" (click)="alterarValorValendo(1)">1</ion-button>
+    <ion-button color="dark" style="width: 60px;" (click)="alterarValorValendo(3)">3</ion-button>
+    <ion-button color="dark" style="width: 60px;" (click)="alterarValorValendo(6)">6</ion-button>
+    <ion-button color="dark" style="width: 60px;" (click)="alterarValorValendo(9)">9</ion-button>
+    <ion-button color="dark" style="width: 60px;" (click)="alterarValorValendo(12)">12</ion-button>
   </ion-grid>
 </div>
 </div>
@@ -36,9 +36,9 @@
       <ion-card-header>
         <ion-title>Time 1</ion-title>
 
-        <ion-button>+</ion-button>
+        <ion-button (click)="adicionarPontuacaoTime1()">+</ion-button>
         <h1>{{time1}}</h1>
-        <ion-button>-</ion-button>
+        <ion-button (click)="removerPontuacaoTime1()">-</ion-button>
 
       </ion-card-header>
 
@@ -48,9 +48,9 @@
       <ion-card-header>
         <ion-title>Time 2</ion-title>
 
-        <ion-button>+</ion-button>
+        <ion-button (click)="adicionarPontuacaoTime2()">+</ion-button>
         <h1>{{time2}}</h1>
-        <ion-button>-</ion-button>
+        <ion-button (click)="removerPontuacaoTime2()">-</ion-button>
 
       </ion-card-header>
 
@@ -85,6 +85,6 @@
 
 </div>
 
-<ion-button expand="block">Limpar</ion-button>
+<ion-button expand="block" (click)="LimparVariaveisDoZero()">Limpar</ion-button>
 
 </ion-content>
